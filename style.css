@@ -1,3 +1,72 @@
 body {
+  background: #eaeedb url(images/Teapot-background.png) right top no-repeat;
+  background-size: 195px;
+  font-style: Georgia, serif;
+  max-width: 1920px;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin: 0px;
+}
+
+main {  
+  display:inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+section {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+header {
+  width: 30%;
+  margin: auto;
+}
+
+table {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border: 3px double black;
+}
+tr, th, td {
+  border: 1px solid black;
+}
+
+.table {
+  margin-top: 10%;
   background-color: pink;
+  float: right;
+  width: 20%;
+}
+
+#tea {
+  display: block;
+  float: left;
+  clear: none;
+  width: ;
+}
+
+.tea {
+  float: left;
+  clear: none;
+
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: 15%; 
+  }
+
+  .table {
+    float: none;
+    width: 100%;
+  }
 }
