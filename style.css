@@ -1,31 +1,44 @@
 body {
   background: #eaeedb url(images/Teapot-background.png) right top no-repeat;
   background-size: 195px;
-  font-style: Georgia, serif;
+  font-family: Georgia;
   max-width: 1920px;
+  min-width: 300px;
+}
+
+figure {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 nav {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  margin: 0px;
+  width: 10%;
+  min-width: 105px;
+  padding-right: 5px;
+  margin-left: 5px;
 }
 
 main {  
   display:inline-block;
   vertical-align: top;
-  width: 75%;
-}
-
-section {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
+  width: 55%;
+  min-width: 190px;
+  padding-left: 5px;
 }
 
 header {
-  width: 30%;
+  width: 20%;
+  margin: auto;
+}
+
+footer {
+  width: 20%;
   margin: auto;
 }
 
@@ -40,24 +53,30 @@ tr, th, td {
   border: 1px solid black;
 }
 
-.table {
+#table {
   margin-top: 10%;
-  background-color: pink;
   float: right;
   width: 20%;
 }
 
-#tea {
-  display: block;
-  float: left;
-  clear: none;
-  width: ;
+.tea {
+  position: fixed;
+  margin-right: 2%;
 }
 
-.tea {
-  float: left;
-  clear: none;
+.teamain {
+  margin-left: 15%;
+}
 
+.frontpage {
+  font-size: 250%;
+}
+
+a:link {
+  color: #215f0c;
+}
+a:visited {
+  color: #005e00;
 }
 
 @media screen and (max-width: 1000px) {
@@ -65,8 +84,46 @@ tr, th, td {
     background-size: 15%; 
   }
 
-  .table {
+  #table {
     float: none;
-    width: 100%;
+    width: 55%;
+    margin: 10px auto;
+  }
+
+  .teamain {
+  margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  body {
+    font-size: 90%;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  h4 {
+    font-size: 90%;
+  }
+}
+
+@media print {
+  
+  #table {
+  float: none;
+  width: 55%;
+  margin: 10px auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    display: block;
+  }
+  img {
+    display: block;
+    page-break-inside: avoid;
   }
 }
